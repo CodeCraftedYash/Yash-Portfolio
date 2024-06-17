@@ -1,0 +1,481 @@
+:root {
+    --textSize: 1.5rem;
+    --fontColor: white;
+    --fontBlue: rgb(25, 174, 255);
+    --normalTextSize: 1.2rem;
+    --shadow: rgba(0, 0, 0, 0.482);
+    --headerSize: 2.5rem;
+    --border: 2px solid var(--fontBlue);
+    --componentMargin:6rem 10rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #0f192e 50%, #261b76);
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+   
+ 
+
+}
+
+.textblue {
+    color: var(--fontBlue);
+}
+
+header {
+    width: 100%;
+    box-shadow: 0 1px 9px 3px var(--shadow);
+    padding: 0 0 1rem;
+   
+}
+.subHeading{
+    color: var(--fontColor);
+    font-size: 1.5rem;
+    margin:0 0 1rem;
+}
+
+nav {
+    display: flex;
+    flex-flow: column wrap;
+  
+    padding: 1.5rem 2rem;
+
+    width: 100%;
+    height: 3rem;
+    
+}
+
+.navtext {
+    width:fit-content;
+    font-size: var(--textSize);
+    color: var(--fontColor);
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    margin-left: 35rem;
+
+    
+   
+    
+
+}
+
+.navbar li {
+    
+    margin-left: 2rem;
+    
+   
+  
+    
+}
+
+.navbar a {
+   
+    text-decoration: none;
+    color: var(--fontColor);
+
+    
+   
+}
+
+.navbar a:hover {
+   
+    color: var(--fontBlue);
+
+   
+}
+
+.hero {
+    width: 80%;
+    margin: var(--componentMargin);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: var(--border);
+    border-radius: 2rem;
+    padding:1rem 1rem 1rem 1rem;
+    
+}
+
+.title {
+    font-size: var(--textSize);
+    color: var(--fontColor);
+    margin: 1rem 0;
+}
+
+.header {
+    font-size: var(--headerSize);
+    color: var(--fontColor);
+    margin: 1rem 0 2rem;
+    text-align: center;
+    
+}
+
+.image {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    margin: 2rem 0;
+}
+
+.normaltexts {
+    font-size: var(--normalTextSize);
+    color: var(--fontColor);
+    margin: 1rem 12rem 0 12rem;
+    text-align: left;
+    
+}
+
+#btn {
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: .5rem;
+}
+
+#btn:hover {
+    font-size: 1.05rem;
+    font-weight: bolder;
+}
+
+.InvisibleContent {
+    display: none;
+}
+
+.journey {
+    width: 80%;
+    text-align: center;
+    margin: var(--componentMargin);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border: var(--border);
+    border-radius: 2rem;
+    padding:1rem 1rem 1rem 1rem;
+
+}
+
+.journeyContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.journeyDiv {
+    margin: var(--componentMargin);
+}
+
+.journeyList li {
+    border: 2px solid var(--fontBlue);
+    font-size: var(--normalTextSize);
+    color: var(--fontColor);
+    list-style: none;
+    margin: 0;/* Adjust margin to prevent overflow */
+    width: 8rem;
+    height: auto;
+    padding: 1rem;
+    min-width: max-content;
+}
+
+.journeyList li:hover {
+    background-color: #03d5ff9e;
+}
+
+.skillsContainer {
+    text-align: center;
+    margin: var(--componentMargin);
+    width: 80%; /* Ensure the container width is within bounds */
+    border: var(--border);
+    border-radius: 2rem;
+    padding:1rem 1rem 1rem 1rem;
+}
+
+.skillsContainer .title {
+    margin-right: 0; /* Reset margin */
+}
+
+.skills {
+    
+    width: 100%; /* Ensure the width is within container */
+    height: fit-content;
+    margin: 0 auto; /* Center the skills list */
+    list-style: none;
+    padding: 1.5rem;
+}
+
+.individualSkills {
+    text-align: left;
+    color: var(--fontColor);
+    font-size: var(--normalTextSize);
+    margin-bottom: 3rem;
+}
+
+.progressBarBorder {
+    width: 100%; /* Ensure the width is within bounds */
+    height: 2rem;
+    border: 2px solid var(--fontBlue);
+    margin: 1rem 0rem 0 0;
+
+    border-radius: 50px;
+}
+
+.progressBar {
+    width: 0%; /* Initial width */
+    height: 70%;
+    background-color: var(--fontBlue);
+    border-radius: 10px;
+    margin: .25rem .25rem;
+    transition: width 2s ease;
+}
+
+.percentage {
+    float: right;
+}
+
+.contactContainer {
+    text-align: center;
+    margin: var(--componentMargin);
+   
+     width: 80%;
+    
+     height: 40rem;
+     border: var(--border);
+     border-radius: 2rem;
+    padding:1rem 1rem 1rem 1rem;
+    
+}
+.contact{
+    list-style: none;
+}
+.details{
+    text-align:left;
+    margin:0rem 26rem 0rem;
+    white-space: nowrap;
+    
+}
+.details li{
+    margin-bottom: 3rem;
+}
+.contactContainer2{
+    width: 30rem;
+    height: fit-content;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin-left: 20rem;
+ 
+}
+input{
+    height: 3rem;
+    margin-bottom: .5rem;
+    border: 3px solid var(--fontBlue);
+    text-align:start;
+    padding-left: .5rem;
+}
+#submitbtn{
+    background-color: var(--fontBlue);
+    border-radius: 2rem;
+    width:4rem;
+    margin:1rem 0;
+}
+
+.info{
+    width:100%;
+    height: 3rem;
+    box-shadow: 0 1px 9px 3px var(--shadow);
+    font-size: var(--normalTextSize);
+    color: var(--fontColor);
+    padding:1rem 1rem 1rem 1rem;
+    text-align: center;
+}
+
+.smallText{
+    margin-left: 20rem;
+    font-size: .85rem;
+}
+.date{
+    font-size: .85rem;
+    white-space: nowrap;
+}
+
+@media (max-width:426px) {
+    :root {
+        --textSize: .8rem;
+        --fontColor: white;
+        --fontBlue: rgb(25, 174, 255);
+        --normalTextSize: 1rem;
+        --shadow: rgba(0, 0, 0, 0.482);
+        --headerSize: 2rem;
+        --border: 2px solid var(--fontBlue);
+        --componentMargin: 2rem 2rem;
+    } 
+    body{
+        width:100%;
+       
+    }
+  
+  
+
+    nav {
+        width: 100%;
+           padding: 1rem .5rem;
+
+        height: 2rem;
+      
+        
+    }
+
+    .navbar {
+        margin-left: 0rem;
+    }
+   
+    .navbar li {
+    
+        margin-left: .5rem;
+        
+       
+      
+        
+    }
+    .hero {
+        width: 80%;
+        height:fit-content;
+        margin: var(--componentMargin);
+   
+        padding:1rem 1rem 1rem 1rem;
+        
+    }
+
+    .title {
+        font-size: var(--textSize);
+        color: var(--fontColor);
+        margin: 1rem 0;
+    }
+
+    .subHeading{
+        color: var(--fontColor);
+        font-size: 1.3rem;
+    }
+    
+    .header {
+        font-size: var(--headerSize);
+        color: var(--fontColor);
+        margin: 1rem 0 2rem;
+        text-align: center;
+        
+    }
+    
+    .image {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        margin: 0rem 0 1rem;
+    }
+    
+    .normaltexts {
+     
+        margin: 1rem 1rem 0 1rem;
+        text-align: left;
+        
+    }
+
+    .journey {
+        width: 80%;
+        height: fit-content;
+       
+        margin: var(--componentMargin);
+       
+    }
+
+    .journeyContainer {
+       
+        flex-flow: column nowrap;
+       
+    }
+    
+    .journeyDiv {
+        margin: 1rem 2rem;
+    }
+    
+    .journeyList li {
+        margin: 0 0 1rem;/* Adjust margin to prevent overflow */
+       
+    }
+
+
+    .skillsContainer {
+      
+        margin: var(--componentMargin);
+        width: 80%; /* Ensure the container width is within bounds */
+        
+    }
+    
+    .contactContainer {
+        
+       
+       
+         width: 80%;
+         margin: var(--componentMargin);
+         height: fit-content;
+        
+    }
+   
+    .details{
+ 
+        margin:0rem 2.5rem 0rem;
+   
+        
+    }
+
+
+    .details li{
+        margin-bottom: 3rem;
+    }
+
+
+    .contactContainer2{
+        width: fit-content;
+       
+      margin-left: 2.5rem;
+     
+    }
+   
+ 
+    .info{
+        width:100%;
+        height: 3rem;
+        box-shadow: 0 1px 9px 3px var(--shadow);
+        font-size: .75rem;
+       
+        padding:.5rem 0.5rem 0.5rem 0.5rem;
+        text-align: left;
+        
+   
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .smallText{
+        margin-left: 0rem;
+        font-size: .65rem;
+        
+    }
+    .date{
+        font-size: .65rem;
+      
+    }
+    
+    
+}

@@ -562,8 +562,8 @@ input{
         height:20px;
         background-color: purple;
         position: fixed;
-        top: 30rem;
-        right: 2rem;
+          top: 35rem;
+        right: 1.2rem;
         border-radius: 50%;
         border:var(--border);
         color: white;

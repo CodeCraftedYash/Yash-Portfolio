@@ -44,3 +44,9 @@ progressBars.forEach((progressBar, index) => {
 
 
 
+ //TopButton
+ const TopButton=document.querySelector(".TopButton");
+ TopButton.addEventListener("click",()=>{
+  
+    globalThis.scrollTo({top:0,right:0,behavior:"smooth"});
+ });
